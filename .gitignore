@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# Build and output directories
+dist/
+build/
+out/
+
+# TypeScript-specific
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and debugging files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor and OS-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Package lock files (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Coverage reports
+coverage/
+
+# Miscellaneous
+*.log
+*.cache
+.npm/
+.pnp/
+.pnp.js
