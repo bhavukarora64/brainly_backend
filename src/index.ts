@@ -14,7 +14,7 @@ app.use(cors({ origin: "https://brainly-three-jade.vercel.app", credentials: tru
 app.options('*', cors()); // Handle Preflight Requests
 
 app.get("/", (req, res) => {
-    console.log("Welcome to brainly backend, Please use correct endpoint to access the frontend!");
+    res.send("Welcome to brainly backend, Please use correct endpoint to access the frontend!");
 })
 
 app.post("/api/v1/signup", async (req,res) => {
