@@ -10,7 +10,7 @@ import bcrypt from 'bcryptjs';
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://brainly-three-jade.vercel.app", credentials: true }));
 app.options('*', cors()); // Handle Preflight Requests
 
 app.get("/", (req, res) => {
@@ -301,7 +301,7 @@ app.put("/api/v1/brain/share", userAuth ,async (req,res) => {
                         "success" : 1,
                         "error" : 0,
                         "message": "Sucessfully shared the brain !",
-                        "link": `http://localhost:5173/shared-dashboard/${sharableHash}`
+                        "link": `https://brainly-three-jade.vercel.app/shared-dashboard/${sharableHash}`
                     })
                 }
                 else{
